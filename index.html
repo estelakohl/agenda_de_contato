@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./images/logo.png" alt="Logo">
+            <h1>Minha agenda de contatos</h1>
+        </div>
+    </header>
+    <main>
+        <div class="input-container">
+            <input type="text" id="nomeContato" placeholder="Nome do contato">
+            <input type="tel" id="celularContato" placeholder="(99) 99999-9999" maxlength="11">
+            <button class="botao-incluir" onclick="incluirContato()">Incluir</button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="pesquisarContato" placeholder="Pesquisar contato">
+            <button class="botao-pesquisar" onclick="pesquisarContato()">Pesquisar</button>
+        </div>
+        <ul id="listaContatos">
+            <!-- Lista de contatos será preenchida dinamicamente com JavaScript -->
+        </ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
